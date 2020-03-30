@@ -30,6 +30,7 @@ export default function Resgiter() {
 
     try {
       const response = await api.post('ongs', data);
+      alert('seu id é ' + response.data.id);
       history.push('/');
     } catch (err) {
       alert('Erro no cadastro, tente novamente.');
